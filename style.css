@@ -341,12 +341,12 @@
         }
 
         .shape-1 {
-            width: 80px;
-            height: 80px;
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
-            background: radial-gradient(circle, rgba(255, 230, 109, 0.3), rgba(255, 107, 107, 0.2));
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+    background: radial-gradient(circle, rgba(255, 230, 109, 0.3), rgba(255, 107, 107, 0.2));
 }
 .nav-toggle.open span:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
@@ -357,7 +357,7 @@
 .nav-toggle.open span:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
 }
-        }
+        
 
         .shape-2 {
             width: 60px;
