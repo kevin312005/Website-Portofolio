@@ -13,6 +13,11 @@
             <div class="nav-logo">
                 <span>KevinZ</span>
             </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -20,11 +25,6 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <a href="#resume" class="nav-link">CV</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </div>
     </nav>
@@ -417,5 +417,23 @@ This project is particularly valuable for showcasing skills in algorithm program
     </footer>
 
     <script src="java.js"></script>
+<script>
+// Hamburger menu toggle
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+navToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+    navToggle.classList.toggle('open');
+});
+// Close menu on link click (mobile)
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if(window.innerWidth <= 900) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('open');
+        }
+    });
+});
+</script>
     <style id="css">
         
