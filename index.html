@@ -48,7 +48,7 @@
             <div class="hero-image">
                 <div class="image-container">
                     <img src="Asset/Foto Kevin.png" alt="Foto Profil" class="profile-image" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:180px;height:180px;border-radius:50%;object-fit:cover;z-index:2;box-shadow:0 4px 24px rgba(0,0,0,0.15);">
-                        <img src="Asset/Foto Kevin.png" alt="Foto Profil" class="profile-image" style="position:absolute;left:0;top:0;width:100%;height:100%;border-radius:20px;object-fit:cover;z-index:2;box-shadow:0 4px 24px rgba(0,0,0,0.15);">
+                    <img src="Asset/Foto Kevin.png" alt="Foto Profil" class="profile-image" style="position:absolute;left:0;top:0;width:100%;height:100%;border-radius:20px;object-fit:cover;z-index:2;box-shadow:0 4px 24px rgba(0,0,0,0.15);">
                     <div class="floating-shapes">
                         <div class="shape shape-1"></div>
                         <div class="shape shape-2"></div>
@@ -417,23 +417,5 @@ This project is particularly valuable for showcasing skills in algorithm program
     </footer>
 
     <script src="java.js"></script>
-<script>
-// Hamburger menu toggle (fix: use .open for navToggle)
-const navToggle = document.getElementById('nav-toggle');
-const navMenu = document.getElementById('nav-menu');
-navToggle.addEventListener('click', function() {
-    navMenu.classList.toggle('active');
-    navToggle.classList.toggle('open');
-});
-// Close menu on link click (mobile)
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        if(window.innerWidth <= 900) {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('open');
-        }
-    });
-});
-</script>
     <style id="css">
         

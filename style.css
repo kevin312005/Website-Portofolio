@@ -1,3 +1,43 @@
+@media (max-width: 900px) {
+    .hero-image .profile-image[style*="width:100%"] {
+        object-fit: contain !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-image .profile-image[style*="width:100%"] {
+        object-fit: contain !important;
+    }
+}
+@media (max-width: 900px) {
+    .hero-image {
+        height: 220px;
+    }
+    .hero-image .profile-image {
+        width: 100px !important;
+        height: 100px !important;
+        min-width: 0;
+        min-height: 0;
+    }
+    .hero-image .profile-image[style*="width:180px"] {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-image {
+        height: 120px;
+    }
+    .hero-image .profile-image {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .hero-image .profile-image[style*="width:180px"] {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
 * {
             margin: 0;
             padding: 0;
@@ -314,6 +354,18 @@
             position: relative;
             height: 400px;
         }
+        .profile-image-hero {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            z-index: 2;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+        }
 
         .image-container {
             width: 100%;
@@ -324,7 +376,61 @@
             overflow: hidden;
             box-shadow: var(--card-glow);
             animation: pulse-glow 3s ease-in-out infinite;
+            min-height: 100px;
         }
+@media (max-width: 900px) {
+    .hero-image {
+        height: 220px;
+    }
+    .image-container {
+        min-height: 100px;
+        aspect-ratio: 1/1;
+        height: auto;
+    }
+    .hero-image .profile-image[style*="width:180px"] {
+        width: 100px !important;
+        height: 100px !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .hero-image .profile-image[style*="width:100%"] {
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-image {
+        height: 120px;
+    }
+    .image-container {
+        min-height: 60px;
+        aspect-ratio: 1/1;
+        height: auto;
+    }
+    .hero-image .profile-image[style*="width:180px"] {
+        width: 70px !important;
+        height: 70px !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .hero-image .profile-image[style*="width:100%"] {
+        width: 100% !important;
+        height: 100% !important;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+}
 
         @keyframes pulse-glow {
             0%, 100% {
@@ -849,6 +955,11 @@
     .hero-image {
         height: 220px;
     }
+    .profile-image-hero {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
     .project-image {
         height: 150px;
     }
@@ -870,6 +981,11 @@
     }
     .hero-image {
         height: 120px;
+    }
+    .profile-image-hero {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
     }
     .project-image {
         height: 90px;
