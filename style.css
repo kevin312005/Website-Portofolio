@@ -97,6 +97,15 @@
             gap: 2rem;
         }
 
+@media (max-width: 900px) {
+    .nav-menu {
+        display: none !important;
+    }
+    .nav-menu.active {
+        display: flex !important;
+    }
+        }
+
         .nav-link {
             text-decoration: none;
             color: #ecf0f1;
