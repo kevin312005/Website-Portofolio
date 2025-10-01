@@ -822,7 +822,7 @@
         align-items: flex-start;
         gap: 1rem;
         padding: 1.5rem 2rem 2rem 2rem;
-        display: none;
+        display: none !important;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
         box-shadow: 0 8px 32px rgba(0,0,0,0.18);
