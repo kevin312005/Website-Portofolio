@@ -829,7 +829,7 @@
         z-index: 1001;
     }
     .nav-menu.active {
-        display: flex;
+        display: flex !important;
     }
     .nav-link {
         font-size: 1.1rem;
